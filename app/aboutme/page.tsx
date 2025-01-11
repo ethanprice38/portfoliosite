@@ -36,9 +36,9 @@ export default function AboutMe() {
           the fretboard.
           <br />
           <br />
-          Currently, I'm building <b>Behaviorist</b>, an app designed to enable
-          users to utilize the science of behavior analysis to change behaviors,
-          form new habits, and live intentional lives.
+          Currently, I&#39;m building <b>Behaviorist</b>, an app designed to
+          enable users to utilize the science of behavior analysis to change
+          behaviors, form new habits, and live intentional lives.
         </p>
         <span className="space-x-10 items-center justify-center flex flex-row mt-5">
           <MyButton text="Back to Home" redirectValue="/" isDownload={false} />
