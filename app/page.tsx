@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <div className="max-w-5xl">
         <h2 className="text-white text-center font-mono">
-          Hi, I'm Ethan— a Full-Stack Software Engineer and undergraduate
+          Hi, I&#39;m Ethan— a Full-Stack Software Engineer and undergraduate
           computer science major at the{" "}
           <b>University of Maryland, College Park</b> on a mission to enrich the
           day-to-day experiences of users through intuitive tech solutions.

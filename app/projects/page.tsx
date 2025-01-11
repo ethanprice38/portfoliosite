@@ -1,4 +1,5 @@
 import MyButton from "@/components/MyButton";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -8,7 +9,7 @@ export default function Projects() {
     >
       <div className="max-w-full">
         <h1 className="text-center text-white tracking-tight font-mono font-semibold text-5xl mt-10">
-          Ethan's Projects
+          Ethan&#39;s Projects
         </h1>
       </div>
 
@@ -16,11 +17,13 @@ export default function Projects() {
 
       <div className="w-full flex justify-between items-start mt-5 px-5">
         <div className="flex items-center space-x-4">
-          <img
-            src="behavioristlogo_big_highres_white.png"
+          <Image
+            src="/behavioristlogo_big_highres_white.png"
             alt="Behaviorist Logo"
-            className="w-22 h-20 object-cover"
-          />
+            width="80"
+            height="60"
+            className="object-cover"
+          ></Image>
           <h2 className="text-white font-mono font-extrabold text-xl">
             Behaviorist
           </h2>

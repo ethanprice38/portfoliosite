@@ -1,4 +1,5 @@
 import MyButton from "@/components/MyButton";
+import Image from "next/image";
 
 export default function AboutMe() {
   return (
@@ -8,10 +9,14 @@ export default function AboutMe() {
     >
       <div className="max-w-full text-white">
         <div className="flex flex-row items-center justify-center">
-          <img
+          <Image
             src="/blahlaah.jpg"
             alt="Ethan's Photo"
-            className="rounded-md w-12 h-12 object-cover mr-2 mb-3"
+            layout="intrinsic"
+            objectFit="contain"
+            width={50}
+            height={20}
+            className="mr-3 mb-3"
           />
           <h1 className="text-center tracking-tight font-mono font-semibold text-5xl mb-5">
             About Ethan
