@@ -1,4 +1,5 @@
 import MyButton from "@/components/MyButton";
+import React from "react";
 
 export default function Home() {
   return (

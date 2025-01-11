@@ -1,6 +1,7 @@
 import MyButton from "@/components/MyButton";
 import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
+import React from "react";
 
 export default function Projects() {
   return (
