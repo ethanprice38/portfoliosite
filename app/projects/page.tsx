@@ -6,8 +6,8 @@ import React from "react";
 export default function Projects() {
   return (
     <main
-      className={`relative bg-gradient-to-b from-[#0a2911] to-[#000000] flex items-center flex-col mx-auto
-    sm:px-10 min-h-screen overflow-y-scroll`}
+      className={`relative bg-gradient-to-b from-[#260f29] to-[#0f0514] flex justify-center items-center flex-col mx-auto
+      sm:px-10 min-h-screen`}
     >
       <div className="max-w-full mt-10">
         <h1 className="text-center text-white tracking-tight font-mono font-semibold text-5xl">

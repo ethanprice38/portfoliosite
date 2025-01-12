@@ -21,7 +21,7 @@ const MyButton = ({
     return (
       <button
         onClick={() => window.open(`${redirectValue}`, "_blank")}
-        className="relative h-12 overflow-hidden rounded bg-[#333333] px-5 py-2.5 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2"
+        className="relative rounded bg-[#333333] px-5 py-3 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2"
       >
         <span className="relative font-mono tracking-tight">{text}</span>
       </button>
@@ -31,7 +31,7 @@ const MyButton = ({
   return (
     <button
       onClick={handleClick}
-      className="relative h-12 overflow-hidden rounded bg-[#333333] px-5 py-2.5 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2"
+      className="relative rounded bg-[#333333] px-5 py-3 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2"
     >
       <span className="relative font-mono tracking-tight">{text}</span>
     </button>

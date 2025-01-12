@@ -20,7 +20,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <section className="my-5">
-      <div className="flex justify-between items-start px-5">
+      <div className="px-5 flex flex-col sm:flex-row sm:justify-between sm:items-center">
         <div className="flex items-center space-x-4">
           {logoSrc && (
             <Image

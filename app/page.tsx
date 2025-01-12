@@ -4,8 +4,8 @@ import React from "react";
 export default function Home() {
   return (
     <main
-      className={`relative bg-gradient-to-b from-[#121038] to-[#000000] flex justify-center items-center flex-col mx-auto
-    sm:px-10 min-h-screen`}
+      className={`relative bg-gradient-to-b from-[#121038] to-[#000000] flex flex-col justify-center items-center mx-auto
+    sm:px-10 min-h-screen overflow-y-auto px-4 pb-10`}
     >
       <div className="flex flex-row space-x-5">
         <a
@@ -48,9 +48,9 @@ export default function Home() {
             className="h-7 w-7 stroke-white hover:stroke-red-500"
             viewBox="0 0 24 24"
             fill="none"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             {" "}
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />{" "}
