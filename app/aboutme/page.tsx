@@ -13,11 +13,11 @@ export default function AboutMe() {
           <Image
             src="/blahlaah.jpg"
             alt="Photo of Ethan"
-            layout="intrinsic"
+            layout="instrinsic"
             objectFit="contain"
-            width={50}
-            height={20}
-            className="mr-3 mb-3"
+            width={40}
+            height={40}
+            className="mr-3 rounded-lg"
           />
           <h1 className="text-center tracking-tight font-mono font-semibold text-5xl mb-5">
             About Ethan
@@ -33,9 +33,9 @@ export default function AboutMe() {
         </p>
 
         <p className="font-mono max-w-6xl text-gray-300 mt-6">
-          My love for music inspired me to develop a Inspired by my love for
-          music, I developed the <b>Guitar Fretboard Analyzer</b>, a tool to
-          help guitarists improve their skills and streamline songwriting.
+          Inspired by my love for music, I developed the{" "}
+          <b>Guitar Fretboard Analyzer</b>, a tool to help guitarists improve
+          their skills and streamline songwriting.
         </p>
 
         <p className="font-mono max-w-6xl text-gray-300 mt-6">
