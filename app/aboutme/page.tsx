@@ -55,11 +55,13 @@ export default function AboutMe() {
             text="See My Projects"
             redirectValue="projects"
             isDownload={false}
+            otherClasses="bg-[#333333] hover:bg-neutral-800"
           />
           <MyButton
             text="View Resume"
             redirectValue="/PriceEthan_Software_Engineering_Intern_Resume.pdf"
             isDownload={true}
+            otherClasses="bg-[#333333] hover:bg-neutral-800"
           />
         </div>
       </div>
