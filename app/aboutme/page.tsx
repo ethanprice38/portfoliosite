@@ -45,14 +45,19 @@ export default function AboutMe() {
         </p>
 
         <div className="flex flex-row items-center justify-center space-x-10 mt-5">
-          <MyButton text="Back to Home" redirectValue="/" isDownload={false} />
           <MyButton
-            text="Projects"
+            text="Home"
+            redirectValue="/"
+            isDownload={false}
+            otherClasses="bg-[#1E90FF] hover:bg-[#187bcd]"
+          />
+          <MyButton
+            text="See My Projects"
             redirectValue="projects"
             isDownload={false}
           />
           <MyButton
-            text="Resume"
+            text="View Resume"
             redirectValue="/PriceEthan_Software_Engineering_Intern_Resume.pdf"
             isDownload={true}
           />

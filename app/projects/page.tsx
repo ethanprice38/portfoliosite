@@ -42,10 +42,19 @@ export default function Projects() {
       />
 
       <div className="mt-5 flex flex-row space-x-10">
-        <MyButton text="About Me" redirectValue="aboutme" isDownload={false} />
-        <MyButton text="Back to Home" redirectValue="/" isDownload={false} />
         <MyButton
-          text="Resume"
+          text="Learn About Me"
+          redirectValue="aboutme"
+          isDownload={false}
+        />
+        <MyButton
+          text="Home"
+          redirectValue="/"
+          isDownload={false}
+          otherClasses="bg-[#1E90FF] hover:bg-[#187bcd]"
+        />
+        <MyButton
+          text="View Resume"
           redirectValue="/PriceEthan_Software_Engineering_Intern_Resume.pdf"
           isDownload={true}
         />

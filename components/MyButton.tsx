@@ -6,10 +6,12 @@ const MyButton = ({
   text,
   redirectValue,
   isDownload,
+  otherClasses,
 }: {
   text: string;
   redirectValue: string;
   isDownload: boolean;
+  otherClasses?: string;
 }) => {
   const router = useRouter();
 
@@ -31,7 +33,7 @@ const MyButton = ({
   return (
     <button
       onClick={handleClick}
-      className="relative rounded bg-[#333333] px-5 py-3 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2"
+      className={`relative rounded bg-[#333333] px-5 py-3 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2 ${otherClasses}`}
     >
       <span className="relative font-mono tracking-tight">{text}</span>
     </button>
