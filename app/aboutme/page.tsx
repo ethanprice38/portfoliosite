@@ -59,7 +59,7 @@ export default function AboutMe() {
           />
           <MyButton
             text="View Resume"
-            redirectValue="/PriceEthan_Software_Engineering_Intern_Resume.pdf"
+            redirectValue="/PriceEthan_Software_Engineering_Intern_Resume_2.1.25.pdf"
             isDownload={true}
             otherClasses="bg-[#333333] hover:bg-neutral-800"
           />
