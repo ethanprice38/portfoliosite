@@ -9,15 +9,13 @@ export default function AboutMe() {
       sm:px-10 min-h-screen"
     >
       <div className="max-w-full text-white">
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-row items-center justify-center h-24">
           <Image
-            src="/blahlaah.jpg"
+            src="/linkedin.jpeg"
+            width={100}
+            height={100}
+            className="mr-3 rounded-xl"
             alt="Photo of Ethan"
-            layout="instrinsic"
-            objectFit="contain"
-            width={40}
-            height={40}
-            className="mr-3 rounded-lg"
           />
           <h1 className="text-center tracking-tight font-mono font-semibold text-5xl mb-5">
             About Ethan
