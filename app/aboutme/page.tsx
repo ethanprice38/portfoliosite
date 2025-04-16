@@ -42,7 +42,7 @@ export default function AboutMe() {
           behaviors, form new habits, and live intentional lives.
         </p>
 
-        <div className="flex flex-row items-center justify-center space-x-10 mt-5">
+        <div className="flex px-5 py-5 flex-row items-center justify-center space-x-10 mt-5">
           <MyButton
             text="Home"
             redirectValue="/"

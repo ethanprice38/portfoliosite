@@ -74,7 +74,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-5 justify-center items-center flex flex-row space-x-10">
+      <div className="mt-5 px-5 py-5 justify-center items-center flex flex-row space-x-10">
         <MyButton
           text="Learn About Me"
           redirectValue="aboutme"
