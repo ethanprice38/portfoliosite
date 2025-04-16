@@ -9,7 +9,7 @@ export default function AboutMe() {
       sm:px-10 min-h-screen"
     >
       <div className="max-w-full text-white">
-        <div className="flex flex-row items-center justify-center h-24">
+        <div className="px-5 flex flex-row items-center justify-center h-24">
           <Image
             src="/linkedin.jpeg"
             width={100}
@@ -21,8 +21,7 @@ export default function AboutMe() {
             About Ethan
           </h1>
         </div>
-
-        <p className="font-mono max-w-6xl text-gray-300 mt-6">
+        <p className="px-5 font-mono max-w-4xl text-gray-300 mt-6">
           I’m a software engineer studying at the University of Maryland;
           passionate about solving real-world problems through creative and
           efficient solutions. My diverse interests— guitar, mindfulness, and
@@ -30,13 +29,13 @@ export default function AboutMe() {
           my journey and fueled my curiosity in technology.
         </p>
 
-        <p className="font-mono max-w-6xl text-gray-300 mt-6">
+        <p className="px-5 font-mono max-w-4xl text-gray-300 mt-6">
           Inspired by my love for music, I developed the{" "}
           <b>Guitar Fretboard Analyzer</b>, a tool to help guitarists improve
           their skills and streamline songwriting.
         </p>
 
-        <p className="font-mono max-w-6xl text-gray-300 mt-6">
+        <p className="px-5 font-mono max-w-4xl text-gray-300 mt-6">
           Currently, I&#39;m building <b>Behaviorist</b>, an app designed to
           enable users to utilize the science of behavior analysis to change
           behaviors, form new habits, and live intentional lives.
