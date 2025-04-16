@@ -42,7 +42,7 @@ export default function Projects() {
         link="https://guitarchordanalyzer-lq9h.onrender.com/"
       />
 
-      <div className="mt-5 flex flex-row space-x-10">
+      <div className="mt-5 py-5 flex flex-row space-x-10">
         <MyButton
           text="Learn About Me"
           redirectValue="aboutme"
