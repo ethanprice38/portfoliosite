@@ -24,7 +24,8 @@ export default function Projects() {
           Behaviorist is a full-stack, cross-platform app designed to enable
           users to apply the science of behavior analysis to change behaviors
           and build habits. It’s built with TypeScript, TailwindCSS, React Native,
-          ExpressJS, and PostgreSQL. Behaviorist is projected to release April 2025.
+          ExpressJS, and PostgreSQL. I am not able to work on Behaviorist currently due to work, school, 
+          and other projects I am working on, but it will be completed by the end of 2025!
         `}
         logoSrc="/behavioristlogo_big_highres_white.png"
         logoAlt="Behaviorist Logo"
