@@ -5,7 +5,6 @@ export default function TimeBlocking() {
         className="w-full max-w-3xl p-10 rounded-lg shadow-lg text-white text-center"
         style={{
           backgroundImage: "linear-gradient(180deg, #260f29, #0f0514)",
-          backgroundSize: "200% 200%",
         }}
       >
         <h1 className="text-4xl font-thin tracking-wide mb-4 text-gray-100">
@@ -68,8 +67,8 @@ export default function TimeBlocking() {
           </div>
         </div>
       </div>
-      <div className="mt-8 w-full max-w-3xl grid grid-cols-3 gap-4">
-        <div className="border-t-8 border-pink-400 bg-pink-100 text-pink-900 shadow-md rounded-md p-4">
+      <div className="mt-8 w-full max-w-3xl grid grid-cols-3 gap-12">
+        <div className="border-t-8 border-pink-400 bg-pink-100 text-pink-900 min-w-64 shadow-md rounded-md p-4">
           <h3 className="font-bold text-lg mb-2">
             Step 1: Perform a brain-dump
           </h3>
