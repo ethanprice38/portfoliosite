@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TimeBlocking() {
   return (
     <div className="min-h-screen font-inter bg-gradient-to-b from-slate-100 to-slate-300 flex flex-col items-center justify-center p-6">
@@ -33,6 +35,16 @@ export default function TimeBlocking() {
           will have a visual personal schedule for today.
         </p>
       </div>
+      <h1 className="mt-2 text-center text-black font-bold text-xl">
+        Finished product:{" "}
+      </h1>
+      <Image
+        src="/finishedproduct.jpg"
+        width={500}
+        height={500}
+        className="mt-3 rounded-xl"
+        alt="Finished schedule"
+      />
       <div className="bg-slate-900 p-6 rounded-md shadow-lg w-full max-w-[30%] mt-6">
         <h1 className="text-white text-center font-bold text-2xl mb-4">
           Materials
