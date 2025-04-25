@@ -10,9 +10,12 @@ export default {
     extend: {
       colors: {
         black: {
-          DEFAULT: '#000',
-          100: '#000319'
-        }
+          DEFAULT: "#000",
+          100: "#000319",
+        },
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
