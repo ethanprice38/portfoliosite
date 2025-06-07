@@ -94,12 +94,6 @@ export default function Home() {
           otherClasses="bg-[#333333] hover:bg-neutral-800"
         />
       </div>
-      <MyButton
-        text="click here for instructions presentation!"
-        redirectValue="instructions"
-        isDownload={false}
-        otherClasses="bg-blue-400 hover:bg-neutral-800"
-      ></MyButton>
     </main>
   );
 }

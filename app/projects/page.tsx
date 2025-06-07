@@ -16,7 +16,18 @@ export default function Projects() {
       </div>
 
       <hr className="border-t-1 border-white w-full mt-5" />
-
+      <ProjectCard
+        title="Stretch With Donna"
+        dateRange="June 2025"
+        description={`
+          Stretch with Donna is a frontend, single page application for a Maryland In-Home Assisted Stretching business. It’s built with TypeScript, TailwindCSS, NextJS. 
+          I built this app to help Donna, the owner of the business, have a more professional online presence and to help her get more clients.
+          The code is available on my GitHub for those interested.
+        `}
+        logoSrc="/logo.png"
+        logoAlt="Stretch With Donna Logo"
+        link="www.stretchwithdonna.com"
+      />
       <ProjectCard
         title="Behaviorist"
         dateRange="January 2025 - Present"
