@@ -26,7 +26,7 @@ export default function Projects() {
         `}
         logoSrc="/logo.png"
         logoAlt="Stretch With Donna Logo"
-        link="www.stretchwithdonna.com"
+        link="https://www.stretchwithdonna.com"
       />
       <ProjectCard
         title="Behaviorist"
