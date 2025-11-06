@@ -2,6 +2,7 @@ import MyButton from "@/components/MyButton";
 import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
 import React from "react";
+import { RESUME_FILENAME } from "../constants";
 
 export default function Projects() {
   return (
@@ -68,7 +69,7 @@ export default function Projects() {
         />
         <MyButton
           text="View Resume"
-          redirectValue="/EthanPrice_Software_Engineering_Intern_Resume.pdf"
+          redirectValue={`/${RESUME_FILENAME}`}
           isDownload={true}
           otherClasses="bg-[#333333] hover:bg-neutral-800"
         />

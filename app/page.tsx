@@ -1,5 +1,6 @@
 import MyButton from "@/components/MyButton";
 import React from "react";
+import { RESUME_FILENAME } from "./constants";
 
 export default function Home() {
   return (
@@ -89,7 +90,7 @@ export default function Home() {
         />
         <MyButton
           text="View Resume"
-          redirectValue="/PriceEthan_Software_Engineering_Intern_Resume.pdf"
+          redirectValue={`/${RESUME_FILENAME}`}
           isDownload={true}
           otherClasses="bg-[#333333] hover:bg-neutral-800"
         />
