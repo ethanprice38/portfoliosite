@@ -12,7 +12,7 @@ export default function AboutMe() {
       <div className="max-w-full text-white">
         <div className="px-5 flex flex-row items-center justify-center h-24">
           <Image
-            src="/linkedin.jpeg"
+            src="/PriceEthan_headshot.jpg"
             width={100}
             height={100}
             className="mr-3 rounded-xl"
