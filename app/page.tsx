@@ -95,6 +95,14 @@ export default function Home() {
           otherClasses="bg-[#333333] hover:bg-neutral-800"
         />
       </div>
+      <div className="mt-2 flex justify-center">
+        <MyButton
+          text="View UNIV362 Project"
+          redirectValue="presentation"
+          isDownload={false}
+          otherClasses="bg-[#b78d24] hover:bg-[#a27b17] text-[#17140b]"
+        />
+      </div>
     </main>
   );
 }

@@ -4,6 +4,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  background: #05060a;
+}
+
+* {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@page {
+  size: portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #05060a !important;
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .poster-shell {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+  }
 }
