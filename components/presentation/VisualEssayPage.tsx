@@ -67,7 +67,8 @@ const sourceGroups = [
         year: "2006",
         title:
           "Possible Selves and Academic Outcomes: How and When Possible Selves Impel Action.",
-        publication: "Journal of Personality and Social Psychology, 91(1), 188-204.",
+        publication:
+          "Journal of Personality and Social Psychology, 91(1), 188-204.",
         href: "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/oyserman_byeee_terry_2006.pdf",
         visibleLink: "stanford.edu/.../oyserman_byeee_terry_2006.pdf",
         usedFor: "Possible selves linked to strategies and action.",
@@ -122,7 +123,9 @@ function SectionLabel({
 
 function SourcesSection({ concise = false }: { concise?: boolean }) {
   return (
-    <section className={`border-t border-white/10 ${concise ? "pt-2" : "pt-5"}`}>
+    <section
+      className={`border-t border-white/10 ${concise ? "pt-2" : "pt-5"}`}
+    >
       <SectionLabel concise={concise}>Sources</SectionLabel>
       {concise ? (
         <div className="mt-1.5 grid grid-cols-2 gap-x-3 gap-y-1 text-[7px] leading-[1.02] text-white/56">
@@ -133,7 +136,9 @@ function SourcesSection({ concise = false }: { concise?: boolean }) {
               </div>
               {group.items.map((item) => (
                 <div key={`${group.label}-${item.authors}-${item.year}`}>
-                  <span className="font-semibold text-white/74">{item.authors}</span>
+                  <span className="font-semibold text-white/74">
+                    {item.authors}
+                  </span>
                   <span>{` (${item.year}) `}</span>
                   <span>{item.usedFor} </span>
                   <Link
@@ -157,15 +162,21 @@ function SourcesSection({ concise = false }: { concise?: boolean }) {
                 {group.label}
               </div>
               {group.items.map((item) => (
-                <div key={`${group.label}-${item.authors}-${item.year}`} className="space-y-0.5">
+                <div
+                  key={`${group.label}-${item.authors}-${item.year}`}
+                  className="space-y-0.5"
+                >
                   <div>
-                    <span className="font-semibold text-white/74">{item.authors}</span>
+                    <span className="font-semibold text-white/74">
+                      {item.authors}
+                    </span>
                     <span>{` (${item.year}). `}</span>
                     <span>{item.title}</span>
                   </div>
                   <div>{item.publication}</div>
                   <div>
-                    <span className="text-white/72">Used for:</span> {item.usedFor}
+                    <span className="text-white/72">Used for:</span>{" "}
+                    {item.usedFor}
                   </div>
                   <Link
                     href={item.href}
@@ -257,7 +268,7 @@ function IdeaColumn({
             concise
               ? "mt-0.5 text-[8px] leading-[1.0]"
               : "mt-2 text-[13px] leading-5"
-            }`}
+          }`}
         >
           {sentence}
         </p>
@@ -349,7 +360,9 @@ function ApplicationCard({
         concise ? "p-1" : "p-4"
       }`}
     >
-      <div className={`font-semibold text-white ${concise ? "text-[7px]" : "text-sm"}`}>
+      <div
+        className={`font-semibold text-white ${concise ? "text-[7px]" : "text-sm"}`}
+      >
         {title}
       </div>
       <div
@@ -435,7 +448,7 @@ function HeroLightCone({ concise = false }: { concise?: boolean }) {
         />
       ))}
       <div
-          className={`absolute left-3 right-3 uppercase tracking-[0.18em] text-white/48 ${
+        className={`absolute left-3 right-3 uppercase tracking-[0.18em] text-white/48 ${
           concise ? "bottom-1.5 text-[5.5px]" : "bottom-3 text-[10px]"
         }`}
       >
@@ -460,7 +473,9 @@ function GorillaMini({ concise = false }: { concise?: boolean }) {
         >
           46% missed it
         </div>
-        <div className={`uppercase tracking-[0.16em] text-white/55 ${concise ? "mt-0.5 text-[5.5px]" : "mt-1 text-[10px]"}`}>
+        <div
+          className={`uppercase tracking-[0.16em] text-white/55 ${concise ? "mt-0.5 text-[5.5px]" : "mt-1 text-[10px]"}`}
+        >
           Even when it was in plain sight.
         </div>
       </div>
@@ -473,37 +488,65 @@ function GymMini({ concise = false }: { concise?: boolean }) {
     <div className="grid h-full grid-cols-2">
       <div className="relative border-r border-white/8 bg-[#1c1811]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,180,107,0.14),transparent_48%)]" />
-        <div className={`absolute inset-x-[16%] rounded-t-[24px] border border-white/10 bg-white/[0.04] ${concise ? "top-[10%] h-[24%]" : "top-[16%] h-[34%]"}`} />
-        <div className={`absolute inset-x-[25%] text-center font-semibold tracking-[0.2em] text-white/82 ${concise ? "top-[13%] text-[7px]" : "top-[22%] text-[16px]"}`}>
+        <div
+          className={`absolute inset-x-[16%] rounded-t-[24px] border border-white/10 bg-white/[0.04] ${concise ? "top-[10%] h-[24%]" : "top-[16%] h-[34%]"}`}
+        />
+        <div
+          className={`absolute inset-x-[25%] text-center font-semibold tracking-[0.2em] text-white/82 ${concise ? "top-[13%] text-[7px]" : "top-[22%] text-[16px]"}`}
+        >
           GYM
         </div>
-        <div className={`absolute left-[44%] rounded-t-full bg-[#ece7db] ${concise ? "top-[52%] h-6 w-3" : "top-[64%] h-12 w-6"}`} />
-        <div className={`absolute left-[43%] rounded-full bg-[#f7f1e7] ${concise ? "top-[46%] h-3 w-3" : "top-[56%] h-5 w-5"}`} />
-        <div className={`absolute uppercase tracking-[0.16em] text-[#d6b46b] ${concise ? "left-1.5 top-1.5 text-[5.5px]" : "left-3 top-3 text-[10px]"}`}>
+        <div
+          className={`absolute left-[44%] rounded-t-full bg-[#ece7db] ${concise ? "top-[52%] h-6 w-3" : "top-[64%] h-12 w-6"}`}
+        />
+        <div
+          className={`absolute left-[43%] rounded-full bg-[#f7f1e7] ${concise ? "top-[46%] h-3 w-3" : "top-[56%] h-5 w-5"}`}
+        />
+        <div
+          className={`absolute uppercase tracking-[0.16em] text-[#d6b46b] ${concise ? "left-1.5 top-1.5 text-[5.5px]" : "left-3 top-3 text-[10px]"}`}
+        >
           future me
         </div>
-        <div className={`absolute uppercase tracking-[0.16em] text-[#d6b46b] ${concise ? "right-1.5 top-5 text-[5.5px]" : "right-3 top-10 text-[10px]"}`}>
+        <div
+          className={`absolute uppercase tracking-[0.16em] text-[#d6b46b] ${concise ? "right-1.5 top-5 text-[5.5px]" : "right-3 top-10 text-[10px]"}`}
+        >
           momentum
         </div>
-        <div className={`absolute uppercase tracking-[0.16em] text-[#d6b46b] ${concise ? "left-1.5 bottom-1.5 text-[5.5px]" : "left-4 bottom-3 text-[10px]"}`}>
+        <div
+          className={`absolute uppercase tracking-[0.16em] text-[#d6b46b] ${concise ? "left-1.5 bottom-1.5 text-[5.5px]" : "left-4 bottom-3 text-[10px]"}`}
+        >
           one step
         </div>
       </div>
       <div className="relative bg-[#11161d]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(125,140,164,0.13),transparent_48%)]" />
-        <div className={`absolute inset-x-[16%] rounded-t-[24px] border border-white/10 bg-white/[0.03] ${concise ? "top-[10%] h-[24%]" : "top-[16%] h-[34%]"}`} />
-        <div className={`absolute inset-x-[25%] text-center font-semibold tracking-[0.2em] text-white/82 ${concise ? "top-[13%] text-[7px]" : "top-[22%] text-[16px]"}`}>
+        <div
+          className={`absolute inset-x-[16%] rounded-t-[24px] border border-white/10 bg-white/[0.03] ${concise ? "top-[10%] h-[24%]" : "top-[16%] h-[34%]"}`}
+        />
+        <div
+          className={`absolute inset-x-[25%] text-center font-semibold tracking-[0.2em] text-white/82 ${concise ? "top-[13%] text-[7px]" : "top-[22%] text-[16px]"}`}
+        >
           GYM
         </div>
-        <div className={`absolute left-[44%] rounded-t-full rotate-[9deg] bg-[#cfd4db] ${concise ? "top-[52%] h-6 w-3" : "top-[64%] h-12 w-6"}`} />
-        <div className={`absolute left-[43%] rounded-full bg-[#edf1f5] ${concise ? "top-[46%] h-3 w-3" : "top-[56%] h-5 w-5"}`} />
-        <div className={`absolute uppercase tracking-[0.16em] text-[#97a7bf] ${concise ? "left-1.5 top-1.5 text-[5.5px]" : "left-3 top-3 text-[10px]"}`}>
+        <div
+          className={`absolute left-[44%] rounded-t-full rotate-[9deg] bg-[#cfd4db] ${concise ? "top-[52%] h-6 w-3" : "top-[64%] h-12 w-6"}`}
+        />
+        <div
+          className={`absolute left-[43%] rounded-full bg-[#edf1f5] ${concise ? "top-[46%] h-3 w-3" : "top-[56%] h-5 w-5"}`}
+        />
+        <div
+          className={`absolute uppercase tracking-[0.16em] text-[#97a7bf] ${concise ? "left-1.5 top-1.5 text-[5.5px]" : "left-3 top-3 text-[10px]"}`}
+        >
           exhausting
         </div>
-        <div className={`absolute uppercase tracking-[0.16em] text-[#97a7bf] ${concise ? "right-1.5 top-5 text-[5.5px]" : "right-3 top-10 text-[10px]"}`}>
+        <div
+          className={`absolute uppercase tracking-[0.16em] text-[#97a7bf] ${concise ? "right-1.5 top-5 text-[5.5px]" : "right-3 top-10 text-[10px]"}`}
+        >
           judgment
         </div>
-        <div className={`absolute uppercase tracking-[0.16em] text-[#97a7bf] ${concise ? "left-1.5 bottom-1.5 text-[5.5px]" : "left-4 bottom-3 text-[10px]"}`}>
+        <div
+          className={`absolute uppercase tracking-[0.16em] text-[#97a7bf] ${concise ? "left-1.5 bottom-1.5 text-[5.5px]" : "left-4 bottom-3 text-[10px]"}`}
+        >
           too hard
         </div>
       </div>
@@ -593,7 +636,9 @@ export default function VisualEssayPage({
         >
           <div className="flex flex-col justify-between">
             <SectionLabel concise={concise}>Visual Essay</SectionLabel>
-            <div className={concise ? "mt-0.5 print:mt-0.5" : "mt-5 print:mt-3"}>
+            <div
+              className={concise ? "mt-0.5 print:mt-0.5" : "mt-5 print:mt-3"}
+            >
               <h1
                 className={`max-w-xl font-semibold leading-[1.02] tracking-[-0.04em] text-white print:text-[2.45rem] ${
                   concise
@@ -662,7 +707,9 @@ export default function VisualEssayPage({
             {concise ? (
               <>
                 <div className="border border-white/10 bg-white/[0.03] px-1.5 py-1 text-[6px] leading-[1.0] text-white/64">
-                  <span className="font-semibold text-[#d6b46b]">46% vs 15%</span>{" "}
+                  <span className="font-semibold text-[#d6b46b]">
+                    46% vs 15%
+                  </span>{" "}
                   affirmed low-income participants took benefits information.
                 </div>
                 <div className="border border-white/10 bg-white/[0.03] px-1.5 py-1 text-[6px] leading-[1.0] text-white/64">
@@ -744,7 +791,9 @@ export default function VisualEssayPage({
           <SectionLabel concise={concise}>
             Visualization That Works
           </SectionLabel>
-          <div className={`${concise ? "mt-0.5 max-w-[150px]" : "mt-4 max-w-sm"}`}>
+          <div
+            className={`${concise ? "mt-0.5 max-w-[150px]" : "mt-4 max-w-sm"}`}
+          >
             <StatNote
               value="Wish + obstacle + if-then plan"
               caption="More effective than positive fantasy alone."
@@ -763,7 +812,9 @@ export default function VisualEssayPage({
               icon="[ ]"
               concise={concise}
             />
-            <div className={`hidden items-center justify-center text-[#b89a56] md:flex ${concise ? "text-[8px]" : ""}`}>
+            <div
+              className={`hidden items-center justify-center text-[#b89a56] md:flex ${concise ? "text-[8px]" : ""}`}
+            >
               {"->"}
             </div>
             <FrameworkStep
@@ -773,7 +824,9 @@ export default function VisualEssayPage({
               icon="(*)"
               concise={concise}
             />
-            <div className={`hidden items-center justify-center text-[#b89a56] md:flex ${concise ? "text-[8px]" : ""}`}>
+            <div
+              className={`hidden items-center justify-center text-[#b89a56] md:flex ${concise ? "text-[8px]" : ""}`}
+            >
               {"->"}
             </div>
             <FrameworkStep
@@ -783,7 +836,9 @@ export default function VisualEssayPage({
               icon="/!\\"
               concise={concise}
             />
-            <div className={`hidden items-center justify-center text-[#b89a56] md:flex ${concise ? "text-[8px]" : ""}`}>
+            <div
+              className={`hidden items-center justify-center text-[#b89a56] md:flex ${concise ? "text-[8px]" : ""}`}
+            >
               {"->"}
             </div>
             <FrameworkStep
@@ -818,7 +873,7 @@ export default function VisualEssayPage({
             <ApplicationCard
               title="Healthy Self"
               futureSelf="I am someone who takes care of my body and mind."
-              attention="I notice my energy, stress, and the small cues that make movement easier."
+              attention="I notice how what I do effects energy, stress, and body, and long-term outcomes."
               obstacle="When it comes time to workout, I just want to lay in bed"
               ifThen="If it is time to work out and I just want to lay in bed, then I will go to the gym and do one set. After that, I can leave if I want to."
               concise={concise}
